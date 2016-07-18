@@ -1,0 +1,102 @@
+#content{
+	background-color: #750000;
+	border: #A30000 solid 4px;
+	border-radius: 20px;
+	min-width: 300px;
+	width: 90%;
+	min-height: 700px;
+	margin: auto;
+	color: white;
+}
+
+#banner{
+	position: relative;
+	margin-top: 30px;
+}
+
+#logo{
+	position: absolute;
+	top: -50%;
+	left:0;
+	right:0;
+	width: 200px;
+	height: 200px;
+	margin-left:auto;
+	margin-right: auto;
+	background-image: url('files/images/hillhose.png');
+	background-position: center;
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+}
+
+#header{
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	background-color: #E60000;
+	box-shadow: 0px 3px 5px black;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+#toolbar{
+	text-align: right;
+}
+
+#toolbar a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#toolbar li{
+	display: inline-block;
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+body{
+	background-color: #171717;
+	text-align: center;
+	color: white;
+	margin: 0;
+	margin-bottom: 50px;
+}
+
+nav{
+	margin-top: 60px;
+}
+
+nav a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+#manage a{
+	padding-right: 10px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#manage a:hover{
+	color: grey;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav li{
+	display: inline-block;
+	padding-left: 20px;
+	text-decoration: none;
+}
+
+.img_gallery{
+	margin: 5px;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: white;
+	border-width: 2px;
+}
