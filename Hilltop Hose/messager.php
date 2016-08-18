@@ -32,22 +32,6 @@
 		
 		<main>
 		
-			<script>
-				var recipients = [];
-			
-				function addUser(){
-					var e = document.getElementById("users");
-					document.getElementById("recipients").innerHTML += '<option value=' + e.options[e.selectedIndex].value + '>' + e.options[e.selectedIndex].text + '</option>';
-					recipients.push(e.options[e.selectedIndex].value);
-					document.getElementById("recip").value = recipients;
-				}
-
-				function removeUser(){
-					//var e = document.getElementById("recipients");
-					//e.innerHTML = e.innerHTML.replace('<option value=' + e.options[e.selectedIndex].value + '>' + e.options[e.selectedIndex].text + '</option>','');
-				}
-			</script>
-		
 			<div id="content" style="text-align: center;">
 				<form method="post" action="_msgHandler.php">
 					Message Type:<br>
@@ -90,4 +74,5 @@
 			Hilltop Hose Company Inc. &copy;<?php echo date('Y'); ?>
 		</footer>
 	</body>
+	<script src='js/messager.js' type="text/javascript"></script>
 </html>
