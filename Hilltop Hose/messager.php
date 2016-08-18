@@ -35,22 +35,27 @@
 			<div id="content" style="text-align: center;">
 				<form method="post" action="_msgHandler.php">
 					Message Type:<br>
-					<input type="radio" name="type" value="email"> Email
-					<input type="radio" name="type" value="text"> Text Message
-					<input type="radio" name="type" value="comb"> Email &amp; Text<br><br>
+					<input type="radio" name="type" value="email" required="required"> Email
+					<input type="radio" name="type" value="text" required="required"> Text Message
+					<input type="radio" name="type" value="comb" required="required"> Email &amp; Text<br><br>
 					
 					Recipients:<br><br>
 					<select id="users" multiple>
-						<option value="-1">All Members</option>
-						<option value="0">Officers</option>
-						
-						<?php 
-							foreach(getUsers() as $user){
-								echo "<option value='$user->id'>$user->full_name</option>";
-							}
-						?>
+					
 						
 					</select>
+					
+					
+					<div id='members' style='display:none;'>
+						<?php 
+						echo '-1|All Members';
+						echo ',0|Officers';
+							foreach(getUsers() as $user){
+								echo ',' . $user->id . '|' . $user->full_name;
+							}
+						?>
+						</div>
+					
 					
 					<button onclick='addUser()' type="button">Add</button>
 					<button onclick='removeUser()' type="button">Remove</button>
@@ -60,12 +65,13 @@
 					<input id="recip" name="recipients" type="hidden">
 					
 					Subject:<br>
-					<input type="text" name="subject"><br><br>
+					<input type="text" name="subject" required="required"><br><br>
 					
 					Message:<br><br>
-					<textarea name="message" rows="15" cols="100"></textarea><br><br>
+					<textarea name="message" rows="15" cols="100" required="required"></textarea><br><br>
 					
-					<input type="submit" value="Send Message">
+					<input type="button" onclick='submitForm()' value="Send Message">
+					<input id='s' type="submit" style='display:none;'>
 				</form>
 			</div>
 		</main>
