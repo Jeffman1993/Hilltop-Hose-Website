@@ -65,7 +65,7 @@
 		require 'includes/queries.php';
 		
 		$users = array();
-		$res = query('SELECT user_id,first_name,last_name,suffix,rank_name from users JOIN ranks ON rank = rank_id ORDER BY rank_id, last_name;');
+		$res = query('SELECT user_id,username,first_name,last_name,suffix,rank_name from users JOIN ranks ON rank = rank_id ORDER BY rank_id, last_name;');
 	
 		while($row = $res->fetch_assoc()){
 			$user = new User($row['user_id'],$row['username'],$row['first_name'],$row['last_name'],$row['suffix']);

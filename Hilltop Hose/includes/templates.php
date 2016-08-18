@@ -33,11 +33,10 @@
 		echo '
 			<ul>
 				<li><a href="index.php">Home</a></li>
-				<li><a href="#">News</a></li>
 				<li><a href="gallery.php">Gallery</a></li>
 				<li><a href="application.php">Application</a></li>
 				<li><a href="members.php">Members</a></li>
-				<li><a href="#">Events</a></li>
+				<li><a href="messager.php">Messager</a></li>
 			</ul>
 				';
 	}
