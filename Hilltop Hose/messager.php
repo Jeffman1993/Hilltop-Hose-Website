@@ -33,7 +33,7 @@
 		<main>
 		
 			<div id="content" style="text-align: center;">
-				<form method="post" action="_msgHandler.php">
+				<form method="post" action="_msgHandler.php" autocomplete="off">
 					Message Type:<br>
 					<input type="radio" name="type" value="email" required="required"> Email
 					<input type="radio" name="type" value="text" required="required"> Text Message
