@@ -26,8 +26,14 @@
 	
 	function addUser(){
 		var selectedUser = {};
+		
+		try{
 			selectedUser['id'] = userDOM.options[userDOM.selectedIndex].value;
 			selectedUser['name'] = userDOM.options[userDOM.selectedIndex].text;
+		}
+		catch(e){
+			return;
+		}
 	
 		delete userList[selectedUser['id']];
 		recipientList[selectedUser['id']] = selectedUser['name'];
@@ -39,8 +45,14 @@
 	
 	function removeUser(){
 		var selectedUser = {};
+		
+		try{
 			selectedUser['id'] = recipDOM.options[recipDOM.selectedIndex].value;
 			selectedUser['name'] = recipDOM.options[recipDOM.selectedIndex].text;
+		}
+		catch(e){
+			return;
+		}
 			
 		userList[selectedUser['id']] = selectedUser['name'];
 		delete recipientList[selectedUser['id']];
