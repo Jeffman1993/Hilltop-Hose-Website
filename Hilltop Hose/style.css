@@ -55,6 +55,24 @@
 	text-decoration: none;
 }
 
+.album_cover{
+	min-width: 300px;
+	min-height: 200px;
+	max-width: 300px;
+	max-height: 200px;
+	margin: 5px;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: white;
+	border-width: 2px;
+	display: inline-block;
+	background-size: cover;
+	
+	color: black;
+	font-weight: bold;
+	font-size: 50px;
+}
+
 body{
 	background-color: #171717;
 	text-align: center;

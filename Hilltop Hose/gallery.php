@@ -20,7 +20,11 @@
 		
 		<main>
 			<div id="content">
-				<?php getPhotoGallery(); ?>
+				<?php 
+				
+				getPhotoGallery();
+				
+				?>
 			</div>
 		</main>
 		
